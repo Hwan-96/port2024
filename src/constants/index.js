@@ -51,3 +51,50 @@ export const skillText = [
     desc: "정직은 다른 사람보다 나에게 큰 의미를 부여해야 한다. 자신이 정직하지 않으면 진정으로 원하는 일을 열정적으로 밀고 나갈 수 없다. 마음에서 우러나오는 일을 해야 정직해지며 삶을 더 즐길 줄 알게 된다.",
   },
 ];
+
+export const siteText = [
+	{
+		text: ["사이트1","본문","내용"],
+		title: "사이트1 제목 ex) Hoyoverse",
+		code:"http://yunhwan96.pe.kr",
+		view:"http://yunhwan96.pe.kr",
+		info:[
+			"사이트 코딩 소제목",
+			"production period : 2 days 플젝걸린기간",
+			"use stack : 기술스택",
+		]
+	},
+	{
+		text: ["사이트2","본문","내용"],
+		title: "사이트2 제목 ex) Hoyoverse",
+		code:"http://yunhwan96.pe.kr",
+		view:"http://yunhwan96.pe.kr",
+		info:[
+			"사이트 코딩 소제목",
+			"production period : 2 days 플젝걸린기간",
+			"use stack : 기술스택",
+		]
+	},
+	{
+		text: ["사이트2","본문","내용"],
+		title: "사이트2 제목 ex) Hoyoverse",
+		code:"http://yunhwan96.pe.kr",
+		view:"http://yunhwan96.pe.kr",
+		info:[
+			"사이트 코딩 소제목",
+			"production period : 2 days 플젝걸린기간",
+			"use stack : 기술스택",
+		]
+	},
+	{
+		text: ["사이트2","본문","내용"],
+		title: "사이트2 제목 ex) Hoyoverse",
+		code:"http://yunhwan96.pe.kr/",
+		view:"http://yunhwan96.pe.kr",
+		info:[
+			"사이트 코딩 소제목",
+			"production period : 2 days 플젝걸린기간",
+			"use stack : 기술스택",
+		]
+	},
+]
