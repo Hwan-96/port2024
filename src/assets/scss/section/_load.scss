@@ -1,0 +1,76 @@
+.loading-wrap{
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  @include flex-center;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: var(--black);
+  transition: 1.2s;
+
+  &.active{
+    opacity: 0;
+    transform: translateY(-200%);
+  }
+
+  @keyframes loading {
+    0% {transform: scaleY(0)}
+    50% {transform: scaleY(0.5)}
+    100% {transform: scaleY(0)}
+  }
+
+  ul{
+    .item{
+      width: 10px;
+      height: 200px;
+      display: inline-block;
+      background: var(--white);
+      transform-origin: bottom;
+      &:nth-child(1){animation: loading 1.3s -.8s infinite ease-in-out both;}
+      &:nth-child(2){animation: loading 1.3s -.7s infinite ease-in-out both;}
+      &:nth-child(3){animation: loading 1.3s -.6s infinite ease-in-out both;}
+      &:nth-child(4){animation: loading 1.3s -.5s infinite ease-in-out both;}
+      &:nth-child(5){animation: loading 1.3s -.4s infinite ease-in-out both;}
+      &:nth-child(6){animation: loading 1.3s -.3s infinite ease-in-out both;}
+      &:nth-child(7){animation: loading 1.3s -.2s infinite ease-in-out both;}
+      &:nth-child(8){animation: loading 1.3s -.1s infinite ease-in-out both;}
+      &:nth-child(9){animation: loading 1.3s -0s infinite ease-in-out both;}
+    }
+  }
+  span{
+    font-size: 20px;
+    line-height: 2;
+    color: var(--white);
+    font-family: var(--mainEng-font);
+  }
+
+  svg{
+    width: 30vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    @media (max-width: 800px) {
+      width: 70vw;
+    }
+
+    &.svg1{
+      z-index: 1;
+      fill: none;
+      stroke: #fff;
+      stroke-width: 3;
+      transform: translate(-50%, -50%);
+
+      @media (max-width: 800px) {
+        stroke-width: 2;
+      }
+    }
+    &.svg2{
+      fill: var(--subBg300);
+      transform: translate(-49%, -49%);
+      z-index: 0;
+  }
+  }
+}

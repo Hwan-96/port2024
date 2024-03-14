@@ -1,33 +1,33 @@
-// import port01 from "../assets/img/port01.jpg";
-// import port02 from "../assets/img/port02.jpg";
-// import port03 from "../assets/img/port03.jpg";
-// import port04 from "../assets/img/port04.jpg";
-// import port05 from "../assets/img/port05.jpg";
-// import port06 from "../assets/img/port06.jpg";
-// import port07 from "../assets/img/port07.jpg";
-// import port08 from "../assets/img/port08.jpg";
-// import port09 from "../assets/img/port09.jpg";
-// import port10 from "../assets/img/port10.jpg";
+import port01 from "../assets/img/port01.jpg";
+import port02 from "../assets/img/port02.jpg";
+import port03 from "../assets/img/port03.jpg";
+import port04 from "../assets/img/port04.jpg";
+import port05 from "../assets/img/port05.jpg";
+import port06 from "../assets/img/port06.jpg";
+import port07 from "../assets/img/port07.jpg";
+import port08 from "../assets/img/port08.jpg";
+import port09 from "../assets/img/port09.jpg";
+import port10 from "../assets/img/port10.jpg";
 
 export const headerNav = [
 	{
-		title: "intro",
+		title: "<intro>",
 		url: "#intro",
 	},
 	{
-		title: "skill",
+		title: "<skill>",
 		url: "#skill",
 	},
 	{
-		title: "site",
+		title: "<site>",
 		url: "#site",
 	},
 	{
-		title: "portfolio",
+		title: "<portfolio>",
 		url: "#port",
 	},
 	{
-		title: "contact",
+		title: "<contact>",
 		url: "#contact",
 	},
 ];
@@ -96,5 +96,109 @@ export const siteText = [
 			"production period : 2 days 플젝걸린기간",
 			"use stack : 기술스택",
 		]
+	},
+];
+
+export const portText = [
+	{
+		num: "01",
+		title: "포트폴리오 01",
+		desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique temporibus ut totam animi quisquam rerum voluptate veritatis soluta est culpa.",
+		img: port01,
+		code:"http://yunhwan96.pe.kr/",
+		view:"http://yunhwan96.pe.kr/",
+		name:"이미지 alt",
+	},
+	{
+		num: "02",
+		title: "포트폴리오 02",
+		desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique temporibus ut totam animi quisquam rerum voluptate veritatis soluta est culpa.",
+		img: port02,
+		code:"http://yunhwan96.pe.kr/",
+		view:"http://yunhwan96.pe.kr/",
+		name:"이미지 alt",
+	},
+	{
+		num: "03",
+		title: "포트폴리오 03",
+		desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique temporibus ut totam animi quisquam rerum voluptate veritatis soluta est culpa.",
+		img: port03,
+		code:"http://yunhwan96.pe.kr/",
+		view:"http://yunhwan96.pe.kr/",
+		name:"이미지 alt",
+	},
+	{
+		num: "04",
+		title: "포트폴리오 04",
+		desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique temporibus ut totam animi quisquam rerum voluptate veritatis soluta est culpa.",
+		img: port04,
+		code:"http://yunhwan96.pe.kr/",
+		view:"http://yunhwan96.pe.kr/",
+		name:"이미지 alt",
+	},
+	{
+		num: "05",
+		title: "포트폴리오 05",
+		desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique temporibus ut totam animi quisquam rerum voluptate veritatis soluta est culpa.",
+		img: port05,
+		code:"http://yunhwan96.pe.kr/",
+		view:"http://yunhwan96.pe.kr/",
+		name:"이미지 alt",
+	},
+	{
+		num: "06",
+		title: "포트폴리오 06",
+		desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique temporibus ut totam animi quisquam rerum voluptate veritatis soluta est culpa.",
+		img: port06,
+		code:"http://yunhwan96.pe.kr/",
+		view:"http://yunhwan96.pe.kr/",
+		name:"이미지 alt",
+	},
+	{
+		num: "07",
+		title: "포트폴리오 07",
+		desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique temporibus ut totam animi quisquam rerum voluptate veritatis soluta est culpa.",
+		img: port07,
+		code:"http://yunhwan96.pe.kr/",
+		view:"http://yunhwan96.pe.kr/",
+		name:"이미지 alt",
+	},
+	{
+		num: "08",
+		title: "포트폴리오 08",
+		desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique temporibus ut totam animi quisquam rerum voluptate veritatis soluta est culpa.",
+		img: port08,
+		code:"http://yunhwan96.pe.kr/",
+		view:"http://yunhwan96.pe.kr/",
+		name:"이미지 alt",
+	},
+	{
+		num: "09",
+		title: "포트폴리오 09",
+		desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique temporibus ut totam animi quisquam rerum voluptate veritatis soluta est culpa.",
+		img: port09,
+		code:"http://yunhwan96.pe.kr/",
+		view:"http://yunhwan96.pe.kr/",
+		name:"이미지 alt",
+	},
+	{
+		num: "10",
+		title: "포트폴리오 10",
+		desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique temporibus ut totam animi quisquam rerum voluptate veritatis soluta est culpa.",
+		img: port10,
+		code:"http://yunhwan96.pe.kr/",
+		view:"http://yunhwan96.pe.kr/",
+		name:"이미지 alt",
+	},
+];
+
+export const contactText = [
+	{
+		link: "tel:010-5844-1752",
+		title: "Phone: 010. 5844. 1752",
+	},
+	{
+		link: "mailto:yunhwan0960@gmail.com",
+		title: "mail: yunhwan0960@gmail.com",
 	},
 ]

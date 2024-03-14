@@ -16,9 +16,18 @@
     font-weight: 700;
     white-space: nowrap;
     text-indent: -.5vw;
-    letter-spacing: -.3vw;
-    span{
+    li{
       display: block;
+      // text-indent: .1vw;
+      &:nth-child(2){
+        font-weight: 100;
+      }
+      span{
+        opacity: 0;
+        transform: translateY(30px);
+        display: inline-block;
+        margin-right: 2px;
+      }
     }
   }
   .intro-text{
@@ -32,6 +41,20 @@
     flex-direction: column;
     position: relative;
     cursor: pointer;
+    // opacity: 0;
+    // animation: introAni 1s ease-in-out forwards;
+    // animation-delay: 5s;
+
+    // @keyframes introAni {
+    //   0%{
+    //     transform: translateY(50%);
+    //     opacity: 0;
+    //   }
+    //   100%{
+    //     transform: translateY(0);
+    //     opacity: 1;
+    //   }
+    // }
 
     .text{
       font-size: 3vw;
