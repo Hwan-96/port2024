@@ -30,7 +30,9 @@ const Intro = () => {
 				y: 0,
 				stagger: 0.1,
 			})
+			gsap.to(".intro-text",{autoAlpha: 1, duration: 2, delay: 1})
 		},3500);
+
 		gsap.registerPlugin(ScrollTrigger);
 		const introAni = gsap.timeline({
 			scrollTrigger: {
@@ -44,8 +46,8 @@ const Intro = () => {
 				},
 			});
 
-			introAni.to("#intro .intro-text", { height: "50vh", duration: 2, autoAlpha: 1 })
-				.to("#intro .intro-text", { autoAlpha: 0 });
+			introAni.to("#intro .intro-title",{  })
+				.to("#intro .intro-text", { height: "70vh", duration: 2, autoAlpha: 1 })
 
 			return () => {
 				ScrollTrigger.getAll().forEach(trigger => trigger.kill());
@@ -67,6 +69,16 @@ const Intro = () => {
 									</ul>
 									<div className="img">
 											<img src={about} alt="about" />
+									</div>
+
+									<div className="profile">
+										<ul className="profile-text">
+											<li>저는 새로운 도전에 대한 열정과 긍정적인 자세를 가지고 있습니다.</li>
+											<li>벽을 만나 부딪혀도 포기하지 않고 다시 일어나</li>
+											<li>끊임없이 연구하여 해결 할 수 있는 능력을 갖추도록 노력합니다.</li>
+											<li>새로운 것에 대한 학습을 통해 능력있는 프론트엔드 개발자로 성장하여,</li>
+											<li>다채롭고 가치있는 웹 경험을 만들어내는 것이 저의 목표입니다.</li>
+										</ul>
 									</div>
 							</div>
 					</div>

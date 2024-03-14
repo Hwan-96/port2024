@@ -15,7 +15,7 @@
     line-height: 1;
     font-weight: 700;
     white-space: nowrap;
-    text-indent: -.5vw;
+    text-indent: -.3vw;
     li{
       display: block;
       // text-indent: .1vw;
@@ -41,7 +41,7 @@
     flex-direction: column;
     position: relative;
     cursor: pointer;
-    // opacity: 0;
+    opacity: 0;
     // animation: introAni 1s ease-in-out forwards;
     // animation-delay: 5s;
 
@@ -88,5 +88,11 @@
     }
     &:hover .text{opacity: 0;}
     &:hover .img{filter: grayscale(0);}
+
+    .profile{
+      position: absolute;
+      left: 5vw;
+      bottom: 0;
+    }
   }
 }// .intro-inner
