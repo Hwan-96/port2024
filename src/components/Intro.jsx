@@ -60,8 +60,9 @@ const Intro = () => {
 							<ul className="intro-title">
 									<li className="split" aria-label={introText.title[0]}>{introText.title[0]}</li>
 									<li className="split" aria-label={introText.title[1]}>{introText.title[1]}</li>
+									<li className="split" aria-label={introText.title[2]}>{introText.title[2]}</li>
 							</ul>
-							<div className="intro-text">
+							{/* <div className="intro-text">
 									<ul className="text">
 											<li>{introText.desc[0]}</li>
 											<li>{introText.desc[1]}</li>
@@ -80,7 +81,7 @@ const Intro = () => {
 											<li>다채롭고 가치있는 웹 경험을 만들어내는 것이 저의 목표입니다.</li>
 										</ul>
 									</div>
-							</div>
+							</div> */}
 					</div>
 			</section>
 	);

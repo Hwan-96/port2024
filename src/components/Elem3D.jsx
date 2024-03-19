@@ -32,7 +32,7 @@ const Diamond = ({ texture }) => {
   const ref = useRef();
   useFrame(() => { // diamond 모델링 애니메이션
     if (ref.current) {
-      ref.current.rotation.y += 0.01;
+      ref.current.rotation.y += 0.001;
     }
   });
   const { nodes } = useGLTF('/dflat.glb')
@@ -90,7 +90,7 @@ const Scene = () => {
 
   return (
     <>
-      <OrbitControls />
+      {/* <OrbitControls /> */}
       {/* <ambientLight intensity={0.2} /> */}
       {/* <directionalLight position={[0, 1, 0]} /> */}
       {/* <directionalLight position={[1, 2, 8]} intensity={0.7} /> */}
@@ -112,5 +112,7 @@ const Scene = () => {
 };
 
 export default function Elem3D() {
-  return <Scene />;
+  return (
+    <Scene />
+  );
 }

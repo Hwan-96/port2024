@@ -33,7 +33,7 @@ export const headerNav = [
 ];
 
 export const introText = {
-	title: ["Web developer","Yun Hwan Kim"],
+	title: ["Yun Hwan Kim :","Crafting interaction","Web Experiences"],
 	desc: ["Only I can change me life,","no one can do it for me.","-Carol Burnett-"]
 }
 
