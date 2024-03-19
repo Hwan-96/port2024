@@ -20,7 +20,7 @@ const HomeView = () => {
       <Skip />
       <Header />
       <Main>
-        <Canvas>
+        <Canvas shadows camera={{ position: [-5, 0.5, 5], fov: 45 }}>
           <Elem3D />
         </Canvas>
         <Intro />
