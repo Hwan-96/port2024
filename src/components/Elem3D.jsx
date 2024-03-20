@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { useFrame, useLoader } from '@react-three/fiber';
 import * as THREE from 'three';
 import { Caustics, useGLTF, CubeCamera, MeshRefractionMaterial , OrbitControls } from '@react-three/drei';
@@ -28,7 +28,8 @@ const CustomMesh = ({ geometry, material, position, rotation, scale }) => {
 };
 
 const Diamond = ({ texture }) => {
-  const generateRandom = (k = 10) => -Math.random() * k + Math.random() * k;
+
+
   const ref = useRef();
   useFrame(() => { // diamond 모델링 애니메이션
     if (ref.current) {
@@ -38,7 +39,7 @@ const Diamond = ({ texture }) => {
   const { nodes } = useGLTF('/dflat.glb')
   return (
     <mesh castShadow ref={ref} geometry={nodes.Diamond_1_0.geometry}
-    rotation={[0, 0.785, 0.785]}>
+    rotation={[0.5, 0.5, 0]} position={[0, 0, 0]}>
       <MeshRefractionMaterial
         envMap={texture}
         toneMapped={false}
@@ -54,6 +55,29 @@ const Diamond = ({ texture }) => {
 };
 
 const Scene = () => {
+
+  const mouseX = useRef(0);
+  const mouseY = useRef(0);
+
+  const handleMouseMove = (event) => {
+    mouseX.current = ((event.clientX - window.innerWidth / 2) / window.innerWidth) * 15;
+    mouseY.current = -((event.clientY - window.innerHeight / 2) / window.innerHeight) * 15;
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousemove', handleMouseMove);
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
+
+  // 카메라 마우스 위치 반응
+  useFrame(({ camera }) => {
+    camera.position.x += (mouseX.current - camera.position.x) * 0.05;
+    camera.position.y += (mouseY.current - camera.position.y) * 0.05;
+    camera.lookAt(groupRef.current.position);
+  });
+
   const generateRandom = (k = 10) => -Math.random() * k + Math.random() * k;
 
   const groupRef = useRef();

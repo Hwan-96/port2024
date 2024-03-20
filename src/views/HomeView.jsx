@@ -6,7 +6,6 @@ import Site from "../components/Site";
 import Port from "../components/Port";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import Skip from "../components/Skip";
 import Main from "../components/Main";
 import Load from "../components/Load";
 import Elem3D from "../components/Elem3D";
@@ -17,10 +16,9 @@ const HomeView = () => {
     return (
     <>
       <Load />
-      <Skip />
       <Header />
       <Main>
-        <Canvas shadows camera={{ position: [-5, 0.5, 5], fov: 45 }}>
+        <Canvas shadows camera={{ position: [-5, 0.5, 5], fov: 70 }} style={{ position: 'fixed', zIndex: -1}}>
           <Elem3D />
         </Canvas>
         <Intro />

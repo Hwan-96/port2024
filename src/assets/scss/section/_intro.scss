@@ -1,9 +1,12 @@
 #intro{
-  height: 100vh;
+  height: 300vh;
+  position: relative;
 }
 .intro-inner{
+  position: sticky;
+  top: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -18,15 +21,43 @@
     text-indent: -.3vw;
     li{
       display: block;
-      // text-indent: .1vw;
-      &:nth-child(2){
-        font-weight: 100;
+      br{
+        display: none;
+        @media (max-width: 800px) {
+          display: block;
+        }
+      }
+      &>.char{
+        opacity: 0;
       }
       span{
-        opacity: 0;
-        transform: translateY(30px);
+        // transform: translateY(30px);
         display: inline-block;
         margin-right: 2px;
+        vertical-align: middle;
+        &.parent{
+          .before{
+            padding-left: 20px;
+            @media (max-width: 800px) {
+              padding-left: 4px;
+            }
+          }
+          .after{
+            padding-left: 30px;
+            @media (max-width: 800px) {
+              padding-left: 3px;
+            }
+          }
+        }
+      }
+      .parent{
+        position: relative;
+        overflow: hidden;
+        .after{
+          position: absolute;
+          left: 0;
+          top: 100%;
+        }
       }
     }
   }
