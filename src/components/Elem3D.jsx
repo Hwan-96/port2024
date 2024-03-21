@@ -93,16 +93,18 @@ const Scene = () => {
   const meshes = []; // 주변 부유물
   for (let i = 0; i < 300; i++) {
     const scale = 0.05 + Math.abs(generateRandom(0.03));
+    const material = new THREE.MeshPhysicalMaterial({
+      color: 0xBC55EF,
+      side: THREE.DoubleSide,
+      flatShading: true,
+      emissive: 0xA83CA8,
+      metalness: 0,
+    })
     meshes.push(
       <CustomMesh
         key={i}
         geometry={new THREE.CircleGeometry(1, 3)}
-        material={new THREE.MeshPhongMaterial({
-          color: 0xBC55EF,
-          side: THREE.DoubleSide,
-          emissive: 0xA83CA8,
-          metalness: 0,
-        })}
+        material={ material }
         position={[generateRandom(), generateRandom(), generateRandom()]}
         rotation={[generateRandom(), generateRandom(), generateRandom()]}
         scale={[scale, scale, scale]}
@@ -115,12 +117,12 @@ const Scene = () => {
   return (
     <>
       {/* <OrbitControls /> */}
-      {/* <ambientLight intensity={0.2} /> */}
-      {/* <directionalLight position={[0, 1, 0]} /> */}
-      {/* <directionalLight position={[1, 2, 8]} intensity={0.7} /> */}
-      <ambientLight intensity={0.5 * Math.PI} />
+      {/* <ambientLight intensity={0.5 * Math.PI} />
       <spotLight decay={0} position={[5, 5, -10]} angle={0.15} penumbra={1} />
-      <pointLight decay={0} position={[-10, -10, -10]} />
+      <pointLight decay={0} position={[-10, -10, -10]} /> */}
+      <ambientLight color={0x7829367} intensity={0.2} />
+      <pointLight color={0x16711935} intensity={1} position={[10, 10, 5]} castShadow />
+      <pointLight color={0x8913151} intensity={0.5} position={[-5, -10, -15]} />
       <CubeCamera resolution={1024} frames={1} envMap={texture}>
         {(texture) => (
           <Diamond texture={texture} 

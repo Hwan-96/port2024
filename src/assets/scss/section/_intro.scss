@@ -12,6 +12,7 @@
   justify-content: center;
   flex-direction: column;
   padding: 16px;
+  color: var(--white);
 
   .intro-title{
     font-size: 10vw;
@@ -36,6 +37,7 @@
         margin-right: 2px;
         vertical-align: middle;
         &.parent{
+          color: var(--point001);
           .before{
             padding-left: 20px;
             @media (max-width: 800px) {
@@ -43,6 +45,7 @@
             }
           }
           .after{
+            color: var(--point001);
             padding-left: 30px;
             @media (max-width: 800px) {
               padding-left: 3px;

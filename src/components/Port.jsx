@@ -20,7 +20,7 @@ const Port = () => {
           scrollTrigger: {
               trigger: horizontal,
               start: "top 56px",
-              end: () => "+=" + horizontal.offsetWidth,
+              end: () => "+=" + horizontal.offsetWidth * 2,
               pin: true,
               scrub: 1,
               markers: false,
@@ -49,7 +49,7 @@ const Port = () => {
               >
               <span className="num">{port.num}</span>
               <a 
-              href={port.code} 
+              href={port.code}
               target="_blank" 
               className="img" 
               rel="noreferrer noopener">

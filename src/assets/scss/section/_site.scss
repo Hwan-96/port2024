@@ -4,27 +4,30 @@
 
 .site-tit{
   position: sticky;
-  top: 70px;
+  top: 0;
   left: 0;
-  width: 70%;
-  height: 5vw;
-  font-size: 4vw;
+  width: 100%;
+  height: 100vh;
+  font-size: 20vw;
   font-weight: 800;
-  line-height: 1.6;
+  // line-height: 1;
   font-family: var(--mainKor-font);
   text-transform: uppercase;
   color: var(--black100);
-  border-bottom: .4vw solid var(--black100);
-  margin-bottom: 100px;
-
+  margin-bottom: 5vw;
+  display: flex;
+  align-items: center;
+  color: var(--point001);
+  
   @media (max-width: 800px) {
     width: 100%;
     margin-bottom: 10vw;
+    border-bottom: .4vw solid var(--point001);
     font-size: 30px;
     height: auto;
     top: 68px;
     z-index: 1000;
-    background-color: var(--mainBg-color);
+    background-color: var(--black);
   }
 
   em{
@@ -36,105 +39,99 @@
 
 .site-wrap{
   .site-item{
-    height: 70vh;
+    border-radius: 20px;
+    margin: auto;
+    width: 95vw;
+    height: 90vh;
     @include flex-center;
     flex-direction: column;
     position: sticky;
     left: 0;
-
+    // margin-bottom: 45px
+    @media (max-width: 800px) {
+      width: 100%;
+    }
     &.s1{
       background-color: var(--subBg100);
-      top: 180px;
+      top: 70px;
 
       @media (max-width: 800px) {
-        top: 140px;
+        top: 100px;
       }
     }
 
     &.s2{
       background-color: var(--subBg200);
-      top: 200px;
+      top: 90px;
+
+      @media (max-width: 800px) {
+        top: 120px;
+      }
+    }
+
+    &.s3{
+      background-color: var(--subBg300);
+      top: 110px;
+
+      @media (max-width: 800px) {
+        top: 135px;
+      }
+    }
+
+    &.s4{
+      background-color: var(--subBg400);
+      top: 130px;
 
       @media (max-width: 800px) {
         top: 160px;
       }
     }
 
-    &.s3{
-      background-color: var(--subBg300);
-      top: 220px;
-
-      @media (max-width: 800px) {
-        top: 180px;
-      }
-    }
-
-    &.s4{
-      background-color: var(--subBg400);
-      top: 240px;
-
-      @media (max-width: 800px) {
-        top: 200px;
-      }
-    }
-
-    .num{
-      font-size: 5vw;
-      line-height: 1;
-      font-weight: 800;
-      font-family: var(--mainNum-font);
-      position: absolute;
-      left: 1vw;
-      top: 1vw;
-
-      @media (max-width: 800px) {
-        font-size: 80px;
-        left: 20px;
-        top: 20px;
-      }
-    }
-
     .text{
       text-align: center;
-      margin-bottom: 1rem;
-
-      > div{
-        font-size: 3vw;
-        line-height: 1;
-        font-weight: 800;
-        text-transform: uppercase;
+      width: 95%;
+      color: var(--white);
+      .tit{
+        font-size: 6vw;
+        font-weight: 700;
+        text-align: left;
+        height: 7vw;
+        @media (max-width:800px) {
+          font-size: 32px;
+          text-align: center;
+          margin-bottom: 1vw;
+        }
       }
+      .desc{
+        font-size: 1vw;
+        font-weight: 700;
+        margin-top: 1vw;
+      }
+
       @media (max-width: 800px) {
         font-size: 26px;
       }
-    }
-  }
-  .title{
-    font-family: var(--mainKor-font);
-    margin-bottom: 1rem;
-  }
-  .btn{
-    a{
-      text-decoration: underline;
-      text-transform: uppercase;
-      color: var(--black200);
-      font-size: 1rem;
-      transition: all .3s;
-      margin: 0 2px;
 
-      &:hover{
-        color: var(--black);
+      .img{
+        display: block;
+        // margin-top: -20px;
+        width: 100%;
+        margin: auto;
+        border-radius: 50vh;
+        overflow: hidden;
+        img{
+          width: 100%;
+          height: 60vh;
+          object-fit: cover;
+          object-position: 20%;
+        }
       }
     }
   }
   .info{
-    position: absolute;
-    left: 0;
-    bottom: 7%;
-    width: 98%;
-    margin-left: 1%;
-    border-top: 1px solid var(--black);
-    border-bottom: 1px solid var(--black);
+    margin-bottom: 1%;
+    border-top: 1px solid var(--point001);
+    border-bottom: 1px solid var(--point001);
     display: flex;
     justify-content: space-between;
 
