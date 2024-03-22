@@ -6,7 +6,9 @@ const Site = () => {
     return (
       <section id="site">
         <div className="site-inner">
-          <h2 className="site-tit">Project</h2>
+          <h2 className="site-tit">
+            <span>Project</span>
+          </h2>
           <div className="site-wrap">
             {siteText.map((site, key) => (
               <article className={`site-item s${key+1}`} key={key} style={{ background: `url(${site.bg})` }}>

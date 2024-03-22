@@ -1,0 +1,111 @@
+#port{
+  width: 100%;
+  margin-top: 30vh;
+  // overflow: hidden;
+}
+.port{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.port-inner{
+  padding: 16px;
+  display: flex;
+  .port-title{
+    width: 50vw;
+    color: #fff;
+    font-size: 3vw;
+  }
+  .port-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    width: 7000px;
+    padding-left: 20vw;
+    @media (max-width: 800px) {
+      padding-left: 0;
+    }
+
+    .port-item{
+      width: 500px;
+      height: 70vh;
+      background-color: var(--subBg100);
+      padding: 2.5rem;
+      margin-right: 20px;
+      .num{
+        font-size: 2rem;
+        font-family: var(--mainNum-font);
+      }
+      .img{
+        display: block;
+        margin-top: -20px;
+        transition: margin-top .3s;
+
+        img{
+          height: 34vh;
+          object-fit: cover;
+          border-radius: 5px;
+          filter: saturate(0%);
+          transition: all .3s;
+        }
+        &:hover{
+          margin-top: 0;
+          img{filter: saturate(100%);}
+        }
+      }
+      &.p1{
+        width: 50vw;
+        background: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 800px) {
+          width: 500px;
+        }
+        .title{
+          border-bottom: none;
+          padding: 0; 
+          margin-bottom: 0;
+          font-size: 10vw;
+          position: relative;
+          color: var(--point001);
+        }
+        .desc{display: none;}
+        .site{display: none;}
+        .img{margin-top: 0;}
+        img{
+          position: absolute;
+          top: 0;
+          left: 0;
+          filter: none;
+          height: 100%;
+        }
+      }
+    }
+    .title{
+      font-size: 1.5rem;
+      text-align: center;
+      padding: .8rem 0;
+      font-weight: 700;
+      color: var(--black100);
+      border-bottom: 2px solid var(--black100);
+      margin-bottom: 1rem;
+    }
+    .desc{
+      font-size: 1rem;
+    }
+    .site{
+      border: 1px solid var(--black100);
+      display: block;
+      text-align: center;
+      padding: .625rem 1.5rem;
+      margin-top: 1.5rem;
+      transition: all .2s;
+
+      &:hover{
+        background-color: var(--black100);
+        color: var(--white);
+      }
+    }
+  }
+}

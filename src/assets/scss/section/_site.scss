@@ -8,28 +8,37 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  font-size: 20vw;
-  font-weight: 800;
-  // line-height: 1;
-  font-family: var(--mainKor-font);
-  text-transform: uppercase;
-  color: var(--black100);
   margin-bottom: 5vw;
   display: flex;
   align-items: center;
-  color: var(--point001);
-  
+
   @media (max-width: 800px) {
     width: 100%;
     margin-bottom: 10vw;
     border-bottom: .4vw solid var(--point001);
-    font-size: 30px;
     height: auto;
     top: 68px;
     z-index: 1000;
     background-color: var(--black);
   }
 
+  span{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--mainKor-font);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 800;
+    font-size: 19vw;
+    color: var(--point001);
+
+    @media (max-width: 800px) {
+      font-size: 30px;
+    }
+  }
+  
   em{
     font-size: 1.25rem;
     font-weight: 400;

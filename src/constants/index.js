@@ -8,6 +8,7 @@ import port07 from "../assets/img/port07.jpg";
 import port08 from "../assets/img/port08.jpg";
 import port09 from "../assets/img/port09.jpg";
 import port10 from "../assets/img/port10.jpg";
+import porthand from "../assets/img/hand.png";
 
 import pj01 from "../assets/img/pj01.jpg";
 import pj01bg from "../assets/img/pj01bg.jpg";
@@ -137,6 +138,10 @@ export const siteText = [
 ];
 
 export const portText = [
+	// {
+	// 	title: "Portfolio",
+	// 	img: porthand,
+	// },
 	{
 		num: "01",
 		title: "국립중앙도서관",
