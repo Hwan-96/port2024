@@ -39,14 +39,14 @@ const Port = () => {
       stagger: {
         from: "end",
         amount: 3,
-        x: () => Math.random() * 300 - 150, // 랜덤한 x 포지션 값
-        y: () => Math.random() * 300 - 150, // 랜덤한 y 포지션 값
+        x: () => Math.random() * 300 - 150, // 랜덤 포지션
+        y: () => Math.random() * 300 - 150,
       },
+      autoAlpha: 0,
     })
-    t1.to(".port h2 span", {
-      scale: 60,
+    t1.to(".port h2 img", {
+      xPercent: 130,
       ease: "none",
-      duration: 2,
     })
   }, [])
 
@@ -56,6 +56,7 @@ const Port = () => {
       <div className="port">
         <h2>
           <span>Portfolio</span>
+          <img src="/title01.png" alt="" />
         </h2>
         <div className="port-inner">
           <div className="port-wrap">

@@ -13,19 +13,21 @@
 }
 
 .skill-title{
-  position: sticky;
-  top: 56px;
-  left: 0;
+  margin-top: 56px;
+  // position: sticky;
+  // top: 56px;
+  // left: 0;
   width: 100%; // 48%로 바꿀수있음
-  height: 3vw;
+  height: 100vh;
   font-size: 3vw;
   font-weight: 800;
   line-height: 1;
   font-family: var(--mainKor-font);
   text-transform: uppercase;
   color: var(--point001);
-  border-bottom: .4vw solid var(--point001);
-  z-index: 10;
+  // border-bottom: .4vw solid var(--point001);
+  // z-index: 10;
+  span{display: none;}
 
   @media (max-width: 800px) {
     width: 100%;
@@ -45,7 +47,7 @@
 }
 
 .skill-desc{
-  margin-top: 5vw;
+  // margin-top: 5vw;
   width: 100%; // 50%로 바꿀수있음
   @media (max-width: 800px) {
     width: 100%;
@@ -53,7 +55,9 @@
   }
   &>div{
     // border: 1px solid #000;
-    position: relative;
+    // position: relative;
+    position: absolute;
+    top: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     @media (max-width: 800px) {

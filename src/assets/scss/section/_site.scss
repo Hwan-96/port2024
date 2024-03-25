@@ -17,7 +17,7 @@
     margin-bottom: 10vw;
     border-bottom: .4vw solid var(--point001);
     height: auto;
-    top: 68px;
+    top: 67px;
     z-index: 1000;
     background-color: var(--black);
   }
@@ -33,6 +33,7 @@
     font-weight: 800;
     font-size: 19vw;
     color: var(--point001);
+    display: none;
 
     @media (max-width: 800px) {
       font-size: 30px;

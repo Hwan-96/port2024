@@ -12,7 +12,7 @@
   h2{
     font-size: 17vw;
     font-weight: 700;
-    color: var(--white);
+    color: var(--point002);
     position: sticky;
     top: 0;
     left: 0;
@@ -21,6 +21,7 @@
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
+    span{display: none;}
   }
 }
 .port-inner{

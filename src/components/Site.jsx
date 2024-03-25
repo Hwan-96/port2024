@@ -8,6 +8,7 @@ const Site = () => {
         <div className="site-inner">
           <h2 className="site-tit">
             <span>Project</span>
+            <img src="/title00.png" alt="" />
           </h2>
           <div className="site-wrap">
             {siteText.map((site, key) => (
