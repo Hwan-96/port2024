@@ -12,29 +12,29 @@ const Skill = () => {
       scrollTrigger: {
         trigger: "#skill",
         start: "top top",
-        end: "100%",
+        end: "+=3800",
         pin: true,
         scrub: 1,
-        markers: true,
+        markers: false,
         invalidateOnRefresh: true,
         anticipatePin: 1,
       }
     });
-    if (window.innerWidth >= 800) {
       t1.to(".skill-title img", {
         scale: 0.5,
         transformOrigin: "left top"
       },"<")
-      .to(".c1", {
-        yPercent: -300
+      .to(".card", {
+        yPercent: -300,
+        stagger: {
+          from: "start",
+          amount: 0.4,
+        },
       })
-      .to(".c2", {
-        yPercent: -400
-      })
-      .to(".c3", {
-        yPercent: -300
-      });
-    }
+
+      return () => {
+				ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+			};
   }, [])
 
     return (

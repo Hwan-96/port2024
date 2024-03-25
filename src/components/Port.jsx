@@ -48,6 +48,10 @@ const Port = () => {
       xPercent: 130,
       ease: "none",
     })
+
+    return () => {
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    };
   }, [])
 
   return (

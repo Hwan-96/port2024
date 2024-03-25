@@ -1,6 +1,9 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 
 import { headerNav } from "../constants";
+
+import gsap from "gsap";
+import ScrollToPlugin from "gsap/ScrollToPlugin";
 
 const Header = () => {
 
@@ -9,6 +12,30 @@ const Header = () => {
 	const toggleMenu = () =>{
 		setShow((preShow) => !preShow);
 	};
+
+  useEffect(() => {
+
+		gsap.registerPlugin(ScrollToPlugin);
+
+		const scrollToSection = (sectionId) => {
+			gsap.to(window, {
+				scrollTo: {
+					y: sectionId,
+					offsetY: 200
+				},
+				duration: 1,
+				ease: "power2.inOut"
+			});
+		};
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const sectionId = this.getAttribute('href');
+        scrollToSection(sectionId);
+      });
+    });
+  }, []);
 
 	return (
 		<header id="header" role="banner">
