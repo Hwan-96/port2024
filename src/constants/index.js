@@ -45,6 +45,73 @@ export const introText = {
 	desc: ["Crafting"," interaction"," Creative"]
 }
 
+// export const skillText = [
+// 	{
+// 		name: "HTML5",
+// 		img: icon01,
+// 	},
+// 	{
+// 		name: "CSS3",
+// 		img: icon02,
+// 	},
+// 	{
+// 		name: "JavaScript",
+// 		img: icon03,
+// 	},
+// 	{
+// 		name: "React",
+// 		img: icon04,
+// 	},
+// 	{
+// 		name: "Vue",
+// 		img: icon05,
+// 	},
+// 	{
+// 		name: "Bootstrap",
+// 		img: icon06,
+// 	},
+// 	{
+// 		name: "Sass",
+// 		img: icon07,
+// 	},
+// 	{
+// 		name: "Swiper",
+// 		img: icon08,
+// 	},
+// 	{
+// 		name: "jQuery",
+// 		img: icon09,
+// 	},
+// 	{
+// 		name: "Gsap",
+// 		img: icon10,
+// 	},
+// 	{
+// 		name: "anime",
+// 		img: icon11,
+// 	},
+// 	{
+// 		name: "Figma",
+// 		img: icon12,
+// 	},
+// 	{
+// 		name: "GitHub",
+// 		img: icon13,
+// 	},
+// 	{
+// 		name: "Slack",
+// 		img: icon14,
+// 	},
+// 	{
+// 		name: "Photoshop",
+// 		img: icon15,
+// 	},
+// 	{
+// 		name: "Illustrator",
+// 		img: icon16,
+// 	},
+// ]
+
 export const skillText = [
   {
     title: "Front-end",

@@ -1,10 +1,12 @@
 #skill{
+  margin-bottom: 50vh;
 }
 
 .skill-inner{
   padding: 16px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-direction: column; // 없앨수도있음
 
   @media (max-width: 800px) {
@@ -14,19 +16,17 @@
 
 .skill-title{
   margin-top: 56px;
-  // position: sticky;
-  // top: 56px;
-  // left: 0;
+  position: sticky;
+  top: 56px;
+  left: 0;
   width: 100%; // 48%로 바꿀수있음
-  height: 100vh;
+  // height: 100vh;
   font-size: 3vw;
   font-weight: 800;
   line-height: 1;
   font-family: var(--mainKor-font);
   text-transform: uppercase;
   color: var(--point001);
-  // border-bottom: .4vw solid var(--point001);
-  // z-index: 10;
   span{display: none;}
 
   @media (max-width: 800px) {
@@ -54,15 +54,16 @@
 .skill-desc{
   // margin-top: 5vw;
   width: 100%; // 50%로 바꿀수있음
+  position: relative;
   @media (max-width: 800px) {
     width: 100%;
     margin-top: 0;
   }
   &>div{
     // border: 1px solid #000;
-    // position: relative;
-    position: absolute;
-    top: 100%;
+    position: relative;
+    // position: absolute;
+    // top: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     @media (max-width: 800px) {
@@ -70,19 +71,22 @@
       grid-template-columns: repeat(1, 1fr);
     }
     .card{
-      border: 1px solid var(--black100);
+      // border: 1px solid var(--black100);
       position: relative;
-      // padding: 2vw;
       width: 80%;
       margin: auto;
       
       ul{
+        border: 1px solid var(--white);
+        border-top: none;
         li{
-          border-top: 1px solid var(--black100);
+          color: var(--white);
+          border-top: 1px solid var(--white);
           padding: 1vw;
-          background-color: var(--white);
+          background-color: var(--black);
           span{
             font-size: 1.4rem;
+            color: var(--point001);
           }
           p{
             text-indent: 0.1vw;
@@ -102,11 +106,9 @@
   }
   h3{
     font-size: 1.5rem;
-    // text-decoration: underline;
-    // text-underline-position: under;
     padding: 1vw;
     font-weight: 700;
-    background: var(--black100);
+    background: var(--point001);
     color: var(--white);
   }
 }

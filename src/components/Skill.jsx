@@ -12,19 +12,15 @@ const Skill = () => {
       scrollTrigger: {
         trigger: "#skill",
         start: "top top",
-        end: "+=3800",
-        pin: true,
+        end: "+=5000",
+        // pin: true,
         scrub: 1,
         markers: false,
         invalidateOnRefresh: true,
         anticipatePin: 1,
       }
     });
-      t1.to(".skill-title img", {
-        scale: 0.5,
-        transformOrigin: "left top"
-      },"<")
-      .to(".card", {
+      t1.to(".card", {
         yPercent: -300,
         stagger: {
           from: "start",
