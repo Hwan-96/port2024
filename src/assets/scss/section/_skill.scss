@@ -1,5 +1,8 @@
 #skill{
   margin-bottom: 50vh;
+  @media (max-width: 800px) {
+    margin-bottom: 0;
+  }
 }
 
 .skill-inner{
@@ -31,7 +34,7 @@
 
   @media (max-width: 800px) {
     position: sticky;
-    top: 56px;
+    top: 64px;
     left: 0;
     border-bottom: .4vw solid var(--point001);
     z-index: 10;
@@ -77,11 +80,11 @@
       margin: auto;
       
       ul{
-        border: 1px solid var(--white);
+        border: 1px solid var(--point001);
         border-top: none;
         li{
           color: var(--white);
-          border-top: 1px solid var(--white);
+          border-top: 1px solid var(--point001);
           padding: 1vw;
           background-color: var(--black);
           span{

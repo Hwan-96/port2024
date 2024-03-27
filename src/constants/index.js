@@ -5,10 +5,6 @@ import port04 from "../assets/img/port04.jpg";
 import port05 from "../assets/img/port05.jpg";
 import port06 from "../assets/img/port06.jpg";
 import port07 from "../assets/img/port07.jpg";
-import port08 from "../assets/img/port08.jpg";
-import port09 from "../assets/img/port09.jpg";
-import port10 from "../assets/img/port10.jpg";
-import porthand from "../assets/img/hand.png";
 
 import pj01 from "../assets/img/pj01.jpg";
 import pj01bg from "../assets/img/pj01bg.jpg";
@@ -36,7 +32,7 @@ export const headerNav = [
 	},
 	{
 		title: "<contact>",
-		url: "#contact",
+		url: "#footer",
 	},
 ];
 
@@ -44,73 +40,6 @@ export const introText = {
 	title: ["Kim Yun Hwan:","Web Experiences"],
 	desc: ["Crafting"," interaction"," Creative"]
 }
-
-// export const skillText = [
-// 	{
-// 		name: "HTML5",
-// 		img: icon01,
-// 	},
-// 	{
-// 		name: "CSS3",
-// 		img: icon02,
-// 	},
-// 	{
-// 		name: "JavaScript",
-// 		img: icon03,
-// 	},
-// 	{
-// 		name: "React",
-// 		img: icon04,
-// 	},
-// 	{
-// 		name: "Vue",
-// 		img: icon05,
-// 	},
-// 	{
-// 		name: "Bootstrap",
-// 		img: icon06,
-// 	},
-// 	{
-// 		name: "Sass",
-// 		img: icon07,
-// 	},
-// 	{
-// 		name: "Swiper",
-// 		img: icon08,
-// 	},
-// 	{
-// 		name: "jQuery",
-// 		img: icon09,
-// 	},
-// 	{
-// 		name: "Gsap",
-// 		img: icon10,
-// 	},
-// 	{
-// 		name: "anime",
-// 		img: icon11,
-// 	},
-// 	{
-// 		name: "Figma",
-// 		img: icon12,
-// 	},
-// 	{
-// 		name: "GitHub",
-// 		img: icon13,
-// 	},
-// 	{
-// 		name: "Slack",
-// 		img: icon14,
-// 	},
-// 	{
-// 		name: "Photoshop",
-// 		img: icon15,
-// 	},
-// 	{
-// 		name: "Illustrator",
-// 		img: icon16,
-// 	},
-// ]
 
 export const skillText = [
   {
@@ -155,7 +84,8 @@ export const siteText = [
 		code:"http://yunhwan96.pe.kr",
 		view:"http://yunhwan96.pe.kr",
 		info:[
-			"기여도 : 100% Persnol",
+			"100% Persnol Project",
+			"One page",
 			"production period : 20 days",
 			"use stack : HTML/CSS, JavaScript, jQuery, Scss, Gsap",
 		],
@@ -167,11 +97,12 @@ export const siteText = [
 		text: ["호요버스 전체페이지","제작 당시 좋아했던 게임사의 전체페이지를 리뉴얼하며 많은 Tab, Gallery, Animation을 구현하느라 어려웠고, 해결해 나가며 성취감이 컷던 프로젝트"],
 		title: "HOYOVERSE",
 		code:"http://yunhwan96.pe.kr",
-		view:"http://yunhwan96.pe.kr",
+		view:"http://yunhwan96.pe.kr/site/hoyoverse/index.html",
 		info:[
-			"사이트 코딩 소제목",
-			"production period : 2 days 플젝걸린기간",
-			"use stack : 기술스택",
+			"100% Persnol Project",
+			"Main 1page + Sub 7page",
+			"production period : 12 days",
+			"use stack :  HTML/CSS, JavaScript, jQuery",
 		],
 		img: pj02,
 		bg: pj02bg,
@@ -181,123 +112,117 @@ export const siteText = [
 		text: ["아더에러 전체페이지","Git을 활용해 처음으로 협업을 해보았던 프로젝트, 리더로써 모자란 점을 많이 배웠고, 책임감을 가지고 프로젝트 완성도를 위해 갖은 노력을 했던 프로젝트"],
 		title: "ADERERROR",
 		code:"http://yunhwan96.pe.kr",
-		view:"http://yunhwan96.pe.kr",
+		view:"http://yunhwan01.dothome.co.kr/",
 		info:[
-			"사이트 코딩 소제목",
-			"production period : 2 days 플젝걸린기간",
-			"use stack : 기술스택",
+			"Team Project / Leader",
+			"Main 1page + Sub 12page + Detail 18page",
+			"production period : 16 days",
+			"use stack : HTML/CSS, JavaScript, jQuery, Scss, Figma",
 		],
 		img: pj03,
 		bg: pj03bg,
 		name:"아더에러 홈페이지",
 	},
-	// {
-	// 	text: ["사이트2","본문","내용"],
-	// 	title: "사이트2 제목 ex) Hoyoverse",
-	// 	code:"http://yunhwan96.pe.kr/",
-	// 	view:"http://yunhwan96.pe.kr",
-	// 	info:[
-	// 		"사이트 코딩 소제목",
-	// 		"production period : 2 days 플젝걸린기간",
-	// 		"use stack : 기술스택",
-	// 	]
-	// },
 ];
 
 export const portText = [
-	// {
-	// 	title: "Portfolio",
-	// 	img: porthand,
-	// },
 	{
-		num: "01",
-		title: "국립중앙도서관",
-		desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique temporibus ut totam animi quisquam rerum voluptate veritatis soluta est culpa.",
-		img: port01,
-		code:"http://yunhwan96.pe.kr/",
-		view:"http://yunhwan96.pe.kr/",
-		name:"이미지 alt",
-	},
-	{
-		num: "02",
-		title: "Newjeans",
-		desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique temporibus ut totam animi quisquam rerum voluptate veritatis soluta est culpa.",
-		img: port02,
-		code:"http://yunhwan96.pe.kr/",
-		view:"http://yunhwan96.pe.kr/",
-		name:"이미지 alt",
-	},
-	{
-		num: "03",
-		title: "2023 Web Trend",
-		desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique temporibus ut totam animi quisquam rerum voluptate veritatis soluta est culpa.",
-		img: port03,
-		code:"http://yunhwan96.pe.kr/",
-		view:"http://yunhwan96.pe.kr/",
-		name:"이미지 alt",
-	},
-	{
-		num: "04",
-		title: "Sake09",
-		desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique temporibus ut totam animi quisquam rerum voluptate veritatis soluta est culpa.",
-		img: port04,
-		code:"http://yunhwan96.pe.kr/",
-		view:"http://yunhwan96.pe.kr/",
-		name:"이미지 alt",
-	},
-	{
-		num: "05",
-		title: "Laftel",
-		desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique temporibus ut totam animi quisquam rerum voluptate veritatis soluta est culpa.",
-		img: port05,
-		code:"http://yunhwan96.pe.kr/",
-		view:"http://yunhwan96.pe.kr/",
-		name:"이미지 alt",
+		num: "07",
+		title: "aespa Karina",
+		desc: "에스파 카리나의 이미지와 폴리곤 아트가 잘어울려 일러스트로 작업하였고, 포토샵을 활용해 목업이미지를 제작",
+		img: port07,
+		code:"https://www.figma.com/file/XJc4n7HBxttg3WpYL66AhG/%EC%97%90%EC%8A%A4%ED%8C%8C-%EC%B9%B4%EB%A6%AC%EB%82%98?type=design&node-id=0%3A1&mode=design&t=bm8awt9tUidSx2DU-1",
+		view:"https://www.figma.com/proto/XJc4n7HBxttg3WpYL66AhG/%EC%97%90%EC%8A%A4%ED%8C%8C-%EC%B9%B4%EB%A6%AC%EB%82%98?page-id=0%3A1&type=design&node-id=0-3&viewport=690%2C477%2C0.23&t=Ong07skfrewIUVHt-1&scaling=scale-down&mode=design",
+		name:"aespa Karina",
+		btn:"View Figma",
+		info:[
+			"100% Persnol",
+			"photoshop, illustrator, Figma",
+		],
 	},
 	{
 		num: "06",
 		title: "Steam",
-		desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique temporibus ut totam animi quisquam rerum voluptate veritatis soluta est culpa.",
+		desc: "게임 패키지 플랫폼 Steam 앱을 리디자인, 아이콘을 직접 제작하려 만들었으며, 사용자 경험을 고려하여 스와이프, 이벤트페이지, 상품 페이지를 제작",
 		img: port06,
-		code:"http://yunhwan96.pe.kr/",
-		view:"http://yunhwan96.pe.kr/",
-		name:"이미지 alt",
+		code:"https://www.figma.com/file/ADOSRKc2tQAjJIBpYTQTNX/%EC%8A%A4%ED%8C%80-App?type=design&node-id=0%3A1&mode=design&t=38LDyGFUtiBlLxMY-1",
+		view:"https://www.figma.com/proto/ADOSRKc2tQAjJIBpYTQTNX/%EC%8A%A4%ED%8C%80-App?page-id=0%3A1&type=design&node-id=3-4&viewport=690%2C477%2C0.21&t=YfP9MJOIseMbA0F0-1&scaling=scale-down&mode=design",
+		name:"Steam",
+		btn:"View Figma",
+		info:[
+			"100% Persnol",
+			"photoshop, illustrator",
+		],
 	},
 	{
-		num: "07",
-		title: "포트폴리오 07",
-		desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique temporibus ut totam animi quisquam rerum voluptate veritatis soluta est culpa.",
-		img: port07,
-		code:"http://yunhwan96.pe.kr/",
-		view:"http://yunhwan96.pe.kr/",
-		name:"이미지 alt",
+		num: "05",
+		title: "Laftel",
+		desc: "OTT 서비스 라프텔은 여러 디바이스 환경에서 이용되는 웹이여서, 반응형 웹 디자인을 공부하기에 적합해 보여 메인 디자인 시안을 제작",
+		img: port05,
+		code:"https://www.figma.com/file/ftJvsWBdewCi4Bsk2SMiS5/%EB%9D%BC%ED%94%84%ED%85%94?type=design&node-id=0%3A1&mode=design&t=vngRac3HJbA9dtZ0-1",
+		view:"https://www.figma.com/proto/ftJvsWBdewCi4Bsk2SMiS5/%EB%9D%BC%ED%94%84%ED%85%94?page-id=0%3A1&type=design&node-id=0-3&viewport=597%2C412%2C0.13&t=5iTJHjeFAyRyhDwJ-1&scaling=scale-down&mode=design",
+		name:"Laftel",
+		btn:"View Figma",
+		info:[
+			"100% Persnol",
+			"photoshop, illustrator, Figma",
+		],
 	},
 	{
-		num: "08",
-		title: "포트폴리오 08",
-		desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique temporibus ut totam animi quisquam rerum voluptate veritatis soluta est culpa.",
-		img: port08,
-		code:"http://yunhwan96.pe.kr/",
-		view:"http://yunhwan96.pe.kr/",
-		name:"이미지 alt",
+		num: "04",
+		title: "Sake09",
+		desc: "사케09 사이트의 오래된 디자인이 텍스트, 이미지가 너무 많고 가독성이 떨어져, 해당 부분을 중점으로 두고 메인페이지 및 상세페이지 리뉴얼.",
+		img: port04,
+		code:"https://www.figma.com/file/EgCL8hj6le2ZN0MeOHU4Au/%EC%82%AC%EC%BC%8009-%EC%9B%B9?type=design&node-id=0%3A1&mode=design&t=oLmfAaM5CCWi6OK3-1",
+		view:"https://www.figma.com/proto/EgCL8hj6le2ZN0MeOHU4Au/%EC%82%AC%EC%BC%8009-%EC%9B%B9?page-id=0%3A1&type=design&node-id=1-2&viewport=690%2C477%2C0.18&t=32Ux71oxTqCrUhCt-1&scaling=scale-down&mode=design",
+		name:"Sake09",
+		btn:"View Figma",
+		info:[
+			"100% Persnol",
+			"photoshop, illustrator, Figma",
+		],
 	},
 	{
-		num: "09",
-		title: "포트폴리오 09",
-		desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique temporibus ut totam animi quisquam rerum voluptate veritatis soluta est culpa.",
-		img: port09,
-		code:"http://yunhwan96.pe.kr/",
+		num: "03",
+		title: "2023 Web Trend",
+		desc: "2023년 웹 트렌드에 대하여 리서치하고, 대표적인 디자인 트렌드를 보여줄 수 있는 웹사이트를 반응형 원페이지로 제작",
+		img: port03,
+		code:"https://github.com/Hwan-96/webtrand",
 		view:"http://yunhwan96.pe.kr/",
-		name:"이미지 alt",
+		name:"2023 Web Trend",
+		btn:"View Code",
+		info:[
+			"100% Persnol",
+			"HTML/CSS, JavaScript, jQuery",
+		],
 	},
 	{
-		num: "10",
-		title: "포트폴리오 10",
-		desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique temporibus ut totam animi quisquam rerum voluptate veritatis soluta est culpa.",
-		img: port10,
-		code:"http://yunhwan96.pe.kr/",
+		num: "02",
+		title: "Newjeans",
+		desc: "뉴진스 팬사이트로 처음 HTML/CSS를 배웠을 때, CSS로 Slide, Gallery, Hover Effact Trasition 및 animation 기능을 구현",
+		img: port02,
+		code:"https://github.com/Hwan-96/onepage",
 		view:"http://yunhwan96.pe.kr/",
-		name:"이미지 alt",
+		name:"Newjeans",
+		btn:"View Code",
+		info:[
+			"100% Persnol",
+			"HTML/CSS",
+		],
+	},
+	{
+		num: "01",
+		title: "국립중앙도서관",
+		desc: "공공기관 사이트 리뉴얼 프로젝트로 메인페이지를 제작하였고, Full Down Menu, Slide Plugin Custom, Tab, Banner, Slide Trasition 및 animation 기능을 구현",
+		img: port01,
+		code:"https://github.com/Hwan-96/website-Public-institutions",
+		view:"http://yunhwan96.pe.kr/",
+		name:"국립중앙도서관",
+		btn:"View Code",
+		info:[
+			"100% Persnol",
+			"HTML/CSS, JavaScript, jQuery",
+		],
 	},
 ];
 
@@ -310,4 +235,4 @@ export const contactText = [
 		link: "mailto:yunhwan0960@gmail.com",
 		title: "mail: yunhwan0960@gmail.com",
 	},
-]
+];

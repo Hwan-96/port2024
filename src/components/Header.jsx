@@ -21,10 +21,11 @@ const Header = () => {
 			gsap.to(window, {
 				scrollTo: {
 					y: sectionId,
-					offsetY: 200
+					offsetY: 0,
+					autoKill: false
 				},
 				duration: 1,
-				ease: "power2.inOut"
+				ease: 'power3.inOut'
 			});
 		};
 

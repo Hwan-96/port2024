@@ -99,3 +99,6 @@ img {
 #skip a:active {
     top: 10px;
 }
+@media (max-width: 360px) {
+    *{font-size: 14px;}
+  }

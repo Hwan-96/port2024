@@ -27,6 +27,7 @@ const Port = () => {
     })
     let isNegative = false;
     t1.to(".port-item", {
+      delay: 0.2,
       xPercent: () => {
         if (isNegative) {
           isNegative = false;
@@ -38,7 +39,7 @@ const Port = () => {
       },
       stagger: {
         from: "end",
-        amount: 3,
+        amount: 2,
         x: () => Math.random() * 300 - 150, // 랜덤 포지션
         y: () => Math.random() * 300 - 150,
       },
@@ -55,7 +56,6 @@ const Port = () => {
   }, [])
 
   return (
-    // <section id="port" ref={horizontalRef}>
     <section id="port">
       <div className="port">
         <h2>
@@ -68,11 +68,10 @@ const Port = () => {
               <article
                 className={`port-item p${key+1}`}
                 key={key}
-                // ref={(el) => (sectionRef.current[key] = el)}
                 >
                 <span className="num">{port.num}</span>
                 <a 
-                href={port.code}
+                href={port.view}
                 target="_blank" 
                 className="img" 
                 rel="noreferrer noopener">
@@ -80,12 +79,16 @@ const Port = () => {
                 </a>
                 <h3 className="title">{port.title}</h3>
                 <p className="desc">{port.desc}</p>
+                <div className="info">
+                  <span>{port.info[0]}</span>
+                  <span>{port.info[1]}</span>
+                </div>
                 <a
-                href={port.view}
+                href={port.code}
                 target="_blank"
                 className="site"
                 rel="noreferrer noopener">
-                  사이트 보기
+                  <span>{port.btn}</span>
                   </a>
               </article>
             ))}

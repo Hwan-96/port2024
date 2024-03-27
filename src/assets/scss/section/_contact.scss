@@ -43,21 +43,29 @@
     position: relative;
 
     .text{
-      font-size: 3vw;
+      font-size: 1.5rem;
       line-height: 1;
-      font-weight: 800;
+      font-weight: 500;
       text-transform: uppercase;
-      text-decoration: underline;
+      // text-decoration: underline;
       text-align: center;
       position: relative;
       z-index: 100;
       transition: all .3s;
-      cursor: all-scroll;
 
       @media (max-width: 800px) {
         font-size: 24px;
         padding: 0 16px;
         word-wrap: break-all;
+        font-size: 4vw;
+      }
+
+      h2{
+        font-weight: 800;
+        font-size: 7vw;
+        @media (max-width: 800px) {
+          font-size: 13vw;
+        }
       }
     }
   }

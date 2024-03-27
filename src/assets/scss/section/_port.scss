@@ -27,6 +27,21 @@
 .port-inner{
   padding: 16px;
   display: flex;
+
+  .info{
+    margin-bottom: 1%;
+    border-top: 1px solid var(--point001);
+    border-bottom: 1px solid var(--point001);
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 800px) {
+      width: 100%;
+      padding: 5px 0;
+      flex-direction: column;
+    }
+  }
+
   .port-title{
     width: 50vw;
     color: #fff;
@@ -47,11 +62,22 @@
       transform: translate(-50%, -50%) scale(0);
       width: 500px;
       height: 70vh;
-      background-color: var(--subBg100);
+      background-color: var(--black);
+      border: 1px solid var(--point001);
+      border-radius: 15px;
       padding: 2.5rem;
       margin-right: 20px;
+      color: var(--white);
+      overflow: hidden;
       @media (max-width: 800px) {
         width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      @media (max-width: 360px) {
+        padding: 1.2rem;
+        height: 57vh;
       }
       .num{
         font-size: 2rem;
@@ -68,6 +94,9 @@
           border-radius: 5px;
           filter: saturate(0%);
           transition: all .3s;
+          @media (max-width: 360px) {
+            height: 25vh;
+          }
         }
         &:hover{
           margin-top: 0;
@@ -80,12 +109,14 @@
       text-align: center;
       padding: .8rem 0;
       font-weight: 700;
-      color: var(--black100);
-      border-bottom: 2px solid var(--black100);
-      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--point001);
     }
     .desc{
       font-size: 1rem;
+      padding: .5rem 0;
+      @media (max-width: 360px) {
+        display: none;
+      }
     }
     .site{
       border: 1px solid var(--black100);
@@ -94,6 +125,9 @@
       padding: .625rem 1.5rem;
       margin-top: 1.5rem;
       transition: all .2s;
+      @media (max-width: 767px) {
+        display: none;
+      }
 
       &:hover{
         background-color: var(--black100);
