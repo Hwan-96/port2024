@@ -1,9 +1,8 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 import { headerNav } from "../constants";
-
-import gsap from "gsap";
-import ScrollToPlugin from "gsap/ScrollToPlugin";
+import { gsap } from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
 const Header = () => {
 
@@ -13,7 +12,7 @@ const Header = () => {
 		setShow((preShow) => !preShow);
 	};
 
-  useEffect(() => {
+	useEffect(() => {
 
 		gsap.registerPlugin(ScrollToPlugin);
 
@@ -44,7 +43,7 @@ const Header = () => {
 				<div className="header-logo">
 					<a href="/">YunHwan. Kim<em>portfolio</em></a>
 				</div>
-				<nav className={`header-nav ${show ? "show" : ""}`} role="navigation" aria-label="메인 메뉴">
+				<nav className={`header-nav ${show ? "show" : ""}`} role="navigation" aria-label="메인메뉴">
 					<ul>
 						{headerNav.map((nav, key)=>(
 							<li key={key}>
