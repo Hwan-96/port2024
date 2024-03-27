@@ -1,7 +1,6 @@
 #port{
   width: 100%;
   margin-top: 30vh;
-  // overflow: hidden;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -16,7 +15,6 @@
     position: sticky;
     top: 0;
     left: 0;
-    // height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,7 +48,6 @@
   .port-wrap{
     display: flex;
     flex-wrap: nowrap;
-    // width: 7000px;
     @media (max-width: 800px) {
       padding-left: 0;
     }
